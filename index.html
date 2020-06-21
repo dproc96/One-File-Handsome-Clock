@@ -6,17 +6,20 @@
     <title>Handsome Clock</title>
 </head>
 <style>
+    :root {
+        --width: 100vw
+    }
     body {
         width: 100vw;
         background-color: #26CFFF;
     }
     img {
-        width: 500px;
+        width: Calc(var(--width)/2);
         position: absolute;
         left: 50vw;
-        margin-left: -250px;
+        margin-left: Calc(var(--width)/-4);
         top: 50%;
-        margin-top: -250px;
+        margin-top: Calc(var(--width)/-4);
     }
     #hour-hand {
         transform: rotate(90deg);
